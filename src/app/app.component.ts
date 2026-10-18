@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'MyFirstNgApp';
+  userName = 'Benoit';
+
+  childButtonClicked(event) {
+    console.log('In Parent : ', event);
+  }
 }

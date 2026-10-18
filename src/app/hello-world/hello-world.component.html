@@ -1,0 +1,12 @@
+<p *ngIf="firstName">Hello {{ firstName }}</p>
+<p *ngIf="!firstName">Entrez un texte svp</p>
+<input type="text" [(ngModel)]="firstName" (ngModelChange)="textChanged()"/>  
+
+<ul>
+    <li id="{{i}}" *ngFor="let i of primes" >{{ i }}</li>
+</ul>
+
+
+
+<!-- <input type="text" (input)="textChanged($event.target.value)" 
+    [value]="firstName"/>   -->

@@ -1,0 +1,8 @@
+<p appHighlight [highlightColor]="'blue'">
+    {{ (prefix ? prefix : 'Default Prefix') | uppercase }} {{ today | date:'dd/MM/yyyy' }}
+</p>
+<br />
+True {{ true | boolean:'Wesh Magueule'}}<br />
+False {{ false | boolean}}<br />
+Undefined {{ undefined | boolean}}<br />
+Null {{ null | boolean}}<br />
